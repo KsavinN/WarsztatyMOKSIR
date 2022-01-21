@@ -17,9 +17,7 @@ const speedGame = 1;
 let time = 0;
 
 const animation = (tick) => {
-
   if (time++ % (5-speedGame) === 0) {
-    ctx.fillRect(0, 0, 400, 500);
     position.x++;
     ctx.fillRect(position.x, position.y, 20, 20); 
   }
